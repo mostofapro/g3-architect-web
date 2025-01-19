@@ -186,3 +186,137 @@
   font-size: 1.5rem;
   font-weight: 400;
 }
+
+/* Facts Area Style */
+.facts-area{
+  width: 90vw;
+  margin: 2rem auto;
+}
+
+.facts-area-title{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(19, 19, 19);
+  margin-bottom: 1rem;
+}
+
+.facts-area-description{
+  width: 30vw;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(114, 114, 114);
+}
+
+.facts-details{
+  margin-bottom: 3rem;
+  padding: 1rem;
+}
+.fact-lists{
+  display: flex;
+  justify-content: space-around;
+}
+
+.fact-list{
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgb(255, 144, 14);
+  border-radius: .5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.fact-number{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: rgb(66, 66, 66);
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.fact-list-description{
+  font-size: 1rem;
+  color: rgb(114, 114, 114);
+  margin-bottom: 10px;
+}
+/* Mobile device Responsive */
+@media screen and (max-width: 576px){
+  .menu-bar,
+  .menu-lists,
+  .quick-features,
+  .fact-lists{
+    flex-direction: column;
+  }
+
+  .team-img,
+  .features{
+    grid-template-columns: 1fr;
+  }
+  .nav-header,
+  .nav-list{
+    margin-bottom: 1rem;
+  }
+  .team-img > img{
+    width: 100%;
+  }
+
+  .quick-feature-title{
+    margin-top: 1rem;
+  }
+  .feature-img{
+    width: 100%;
+  }
+
+  .feature-btn{
+    margin: 1.5rem auto;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-experience{
+    font-size: .8rem;
+  }
+
+  .facts-area-description{
+    text-align: center;
+    width: 80vw;
+  }
+
+  .fact-lists{
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+/* Medium Device Styles */
+@media screen and (min-width: 576.01px) and (max-width: 992px){
+  .quick-features{
+    flex-direction: column;
+  }
+
+  .team-img,
+  .features{
+    grid-template-columns: 1fr;
+  }
+
+  .quick-feature-title{
+    margin-top: 2rem;
+  }
+
+  .feature-btn{
+    margin-left: 8rem;
+    margin-top: 4rem;
+  }
+
+  .facts-area-description{
+    text-align: center;
+    width: 80vw;
+  }
+
+  .fact-lists{
+    align-items: center;
+    gap: 1rem;
+  }
+}
